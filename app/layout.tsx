@@ -4,11 +4,14 @@ import "./globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400","500","600","700"]
+  weight: ["400", "500", "600", "700"],
+  preload: true,
 });
 
 const roboto = Roboto({
-  weight: ["400","500","700"]
+  subsets: ['latin'],
+  weight: ["400", "500", "700"],
+  preload: true,
 });
 
 export const metadata: Metadata = {
