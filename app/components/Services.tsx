@@ -1,9 +1,9 @@
-import { assets, serviceData, userData } from "@/assets/assets";
+import { serviceData, userData } from "@/assets/assets";
 import { motion } from "motion/react";
 import Image from "next/image";
 import React from "react";
 
-export const Services: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
+export const Services= ()=> {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -42,7 +42,7 @@ export const Services: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
         transition={{ duration: 0.6, delay: 0.9 }}
         className="grid grid-cols-auto gap-6 my-10"
       >
-        {serviceData.map(({ icon, title, description, link }, index) => (
+        {serviceData.map(({ icon, title, description }, index) => (
           <motion.div
           whileHover={{scale: 1.05}}
             key={index}

@@ -2,9 +2,8 @@ import { assets, userData } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 import { motion } from "motion/react";
-import { easeInOut } from "motion";
 
-export const Header: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
+export const Header = () => {
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
       <motion.div
@@ -24,7 +23,7 @@ export const Header: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Roboto"
       >
-        Hi! I'm {userData.userName}
+         {"Hi! I'm " + userData.userName}
         <motion.div
           initial={{ rotate: 0 }}
           whileInView={{ rotate: [-10, 15, -10, 15, -10, 15, -10, 15, 0] }}

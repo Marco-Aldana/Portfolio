@@ -15,7 +15,7 @@ export const Footer: React.FC<{ isDarkMode: boolean }> = ({ isDarkMode }) => {
       <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
         <p>© {new Date().getFullYear()} Marco Aldana. All rights reserved.</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-          {socialMedia.map(({ name, logo, url }, index) => (
+          {socialMedia.map(({ name, url }, index) => (
             <li key={index}>
               <a href={url} target="_blank">
                 {name}
